@@ -20,13 +20,13 @@ if (Meteor.isClient) {
   // Session.setDefault('counter', 0);
 
 
-  Template.GetMogee.helpers({
+  Template.GetToaster.helpers({
     // counter: function () {
     //   return Session.get('counter');
     // }
   });
 
-  Template.GetMogee.rendered = function () {
+  Template.GetToaster.rendered = function () {
     var os = getMobileOperatingSystem();
       if(os==="iOS") {
         window.location=""; // appstore link here
@@ -37,7 +37,7 @@ if (Meteor.isClient) {
       }
   }
 
-  Template.GetMogee.events({
+  Template.GetToaster.events({
   //   'click button': function () {
   //     // increment the counter when button is clicked
   //     Session.set('counter', Session.get('counter') + 1);
